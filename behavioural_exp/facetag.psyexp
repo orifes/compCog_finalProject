@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2020.2.10">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="['resources\\instructions.jpg', 'resources\\main_loop.csv', 'resources\\tag_scale.html', 'resources\\tag_scale.js']" valType="fileList"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1536, 864]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="black" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="facetag" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Save" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="instructions">
+      <ImageComponent name="insIm">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="resources/instructions.jpg" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="insIm" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.3, 0.7)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="instAdvance">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="instAdvance" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="faceTag">
+      <TextComponent name="null_txt">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="null_txt" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="// Exposes PsychoJS's addData for use in HTML pages&amp;#10;window.addData = function(key, value) {&amp;#10;    psychoJS.experiment.addData(key, value);&amp;#10;}&amp;#10;&amp;#10;// Adds an iframe on top of the PsychoJS canvas. Use src to specify an HTML page&amp;#10;window.startHTML = (src) =&gt; {&amp;#10;  $('body').append('&lt;iframe id=&quot;iframe&quot; src=&quot;' + src +'&quot; style=&quot;width: 100%; height: 100%; position:absolute;z-index:1;top:0;left:0;border:0;&quot;&gt;&lt;/iframe&gt;');    &amp;#10;  window.finishedHTML = false;&amp;#10;};&amp;#10;&amp;#10;// Removes the iframe again&amp;#10;window.finishHTML = () =&gt; {&amp;#10;  $('#iframe').remove();&amp;#10;  window.finishedHTML = true;&amp;#10;};&amp;#10;&amp;#10;// Note that you can use window.finishRoutine to check if the HTML page has completed&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="&amp;#10;window.id = id ;&amp;#10;psychoJS.experiment.addData(&quot;name&quot;, name);&amp;#10;window.startHTML('resources/tag_scale.html');" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="continueRoutine = !window.finishedHTML;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="tag_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('name', 'CFD-WM-258-125-N.jpg'), ('id', '1Fx55bclbrFCNR4YzI4PAduV1nuDgN85h')]), OrderedDict([('name', 'CFD-WM-041-021-N.jpg'), ('id', '1BZNoLLVT1JawKZRTmeoaUTreobPVfiGc')]), OrderedDict([('name', 'CFD-WM-037-025-N.jpg'), ('id', '1T5CqMamkSkRK69-zqLLoFZ4di1ssLTk-')]), OrderedDict([('name', 'CFD-WM-252-224-N.jpg'), ('id', '1J7QnwS9uCKdau_UQteUt6HR_qLfbLi_t')]), OrderedDict([('name', 'CFD-WM-025-002-N.jpg'), ('id', '1t9iyvHxpcKNTOBTK091YZT7MGxPEUf5r')]), OrderedDict([('name', 'CFD-WM-205-007-N.jpg'), ('id', '1bND5V4dPZ8DkTDPCVwtbgaR2WUTXBouu')]), OrderedDict([('name', 'CFD-WM-024-015-N.jpg'), ('id', '1TrqWbaYGhGac83-O-DHEKIFUJP2MtAst')]), OrderedDict([('name', 'CFD-WM-019-003-N.jpg'), ('id', '1ymIqB_dEuXjJ1pezsLzcCdOEn3L7en45')]), OrderedDict([('name', 'CFD-WM-255-219-N.jpg'), ('id', '1eYA_PINcwGMSzm-ZjBO0XxSrmQ8zEzhs')]), OrderedDict([('name', 'CFD-WM-004-010-N.jpg'), ('id', '13ydKQJehifDEa84_fso_onWIG670cCFO')]), OrderedDict([('name', 'CFD-WM-202-107-N.jpg'), ('id', '1wZuNCwAcU4-6HtP7GzPlSy4OSQqUIph7')]), OrderedDict([('name', 'CFD-WM-006-002-N.jpg'), ('id', '1LezGR3AjPDmlLp1wq3cWPDWrlR5BTSDH')]), OrderedDict([('name', 'CFD-WM-036-031-N.jpg'), ('id', '1LpEAKVm1vSZyMnXW8O7FIHm8fCflUfJL')]), OrderedDict([('name', 'CFD-WM-217-070-N.jpg'), ('id', '1G_D_wRxQD6SUMUwxvApkRd3PBo5CKjrq')]), OrderedDict([('name', 'CFD-WM-233-106-N.jpg'), ('id', '1gHhUz4XgdjN-Kjg4MMq9CDYqnne97hQb')]), OrderedDict([('name', 'CFD-WM-211-054-N.jpg'), ('id', '1YvG_PnM13X25glMHgJHfYSp1U8u-y6KR')]), OrderedDict([('name', 'CFD-WM-253-119-N.jpg'), ('id', '1SrpiqTeqGt5HVktSLU1JyPkcb7cVV0-h')]), OrderedDict([('name', 'CFD-WM-038-003-N.jpg'), ('id', '1RnjRC6XeW53jZipqzaas-RP216_v_jpU')]), OrderedDict([('name', 'CFD-WM-031-003-N.jpg'), ('id', '1kEcY0qoXg21ieiSFcXaGKscEs6pTPOHP')]), OrderedDict([('name', 'CFD-WM-028-003-N.jpg'), ('id', '14HsmXlAOlBaQPXDzaLGfv-CKJRdBp-dT')]), OrderedDict([('name', 'CFD-WM-218-074-N.jpg'), ('id', '1btEwStIeaLlDGvYQu6loQ9JigFaO2qMI')]), OrderedDict([('name', 'CFD-WM-206-045-N.jpg'), ('id', '1VY9EeQN6Gqv7Tw4zhwstJ-wqUXK4r1xX')]), OrderedDict([('name', 'CFD-WM-040-022-N.jpg'), ('id', '1sKReTKmN4xtf0NDtppBjfISPfA6U2gHi')]), OrderedDict([('name', 'CFD-WM-035-032-N.jpg'), ('id', '10PJTxWkpOjAP-0cfQ4oOD99QXV3wEdwT')]), OrderedDict([('name', 'CFD-WM-221-091-N.jpg'), ('id', '1wy27v3Uw93wtELjXG0wBdAKmEik0Ir95')]), OrderedDict([('name', 'CFD-WM-010-001-N.jpg'), ('id', '15JImz_gl-UCf0K8L-VGuRcwIoJtb5f7X')]), OrderedDict([('name', 'CFD-WM-015-002-N.jpg'), ('id', '1h03KZfqQAZy8CumlOONSLO6jR691DMh2')]), OrderedDict([('name', 'CFD-WM-018-002-N.jpg'), ('id', '1jsaBy4sql62lURZtq2cbj8HItUzoE9rT')]), OrderedDict([('name', 'CFD-WM-239-128-N.jpg'), ('id', '1_y39zn6IkgyNDf86ctePAnRbMixbNjno')]), OrderedDict([('name', 'CFD-WM-219-008-N.jpg'), ('id', '1YmeC7gAUw6350eI80VDgjgoAmY0kWjwI')]), OrderedDict([('name', 'CFD-WM-225-127-N.jpg'), ('id', '1--FFjd-MWx-n_u5TRSDLOAmZqhQnh5qD')]), OrderedDict([('name', 'CFD-WM-034-030-N.jpg'), ('id', '16LLTafEy03Z_FBzPqWdljdDI7AmvN1nL')]), OrderedDict([('name', 'CFD-WM-244-003-N.jpg'), ('id', '1NsvckcNC6NFGkLqy2Iyol6OFzbmh2DEv')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="resources\main_loop.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="tag_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="faceTag"/>
+    <LoopTerminator name="tag_trials"/>
+  </Flow>
+</PsychoPy2experiment>
